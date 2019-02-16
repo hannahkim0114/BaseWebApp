@@ -8,4 +8,11 @@ function myFunction() {
   // 'img-circle' is a bootstrap thing! Check out more here: http://getbootstrap.com/css/
   $("#doge-image").append(`<img class="img-circle" src="images/wowdoge.jpeg" />`);
 }
+function randomColor() {
+    var c = '';
+    while (c.length < 7) {
+        c += (Math.random()).toString(16).substr(-6).substr(-1)
+    }
+    return '#' + c;
+}
 
